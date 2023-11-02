@@ -47,6 +47,18 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 /* BUTTON */
 .hero-button {
@@ -298,19 +310,6 @@ img {
   margin-bottom: 72px;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 /* ICON-TEAM */
 .team-icon-link {
   width: 100%;
@@ -431,9 +430,7 @@ img {
   width: 264px;
   margin-right: 120px;
 }
-.div-icons {
-  display: inline-block;
-}
+
 .social-footer-title {
   font-family: Roboto, sans-serif;
   font-size: 16px;
@@ -443,8 +440,79 @@ img {
   color: #ffffff;
   margin-bottom: 16px;
 }
+/* FOOTER NEW DIV */
+.div-subscribe {
+  display: inline-block;
+  margin-left: 80px;
+}
+.subscribe-footer-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.btn-footer {
+  position: relative;
+  width: 165px;
+}
 
+.subscribe-btn-footer {
+  /* position: relative; */
+  cursor: pointer;
+  background-color: #4d5ae5;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  display: block;
+  min-width: 165px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-footer-send {
+  position: absolute;
+  top: 8px;
+  right: 24px;
+}
+.icon-footer-send {
+  width: 24px;
+  height: 24px;
+
+  fill: #ffffff;
+}
+/* EMAIL INPUT */
+.email-footer-input {
+  width: 264px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  padding-left: 16px;
+  background-color: transparent;
+  /* transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+.email-footer-input::placeholder {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.04em;
+}
+.email-btn-footer-div {
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
+}
+
+/* ------------------------------------------------------------------------------------ */
 /* ICON FOOTER */
+.div-icons {
+  display: inline-block;
+}
 .icon-footer-ul {
   display: flex;
   gap: 16px;
@@ -482,6 +550,7 @@ img {
   display: block;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 /* NEW HW-5 */
 /* BACKDROP */
 .backdrop {
@@ -535,8 +604,6 @@ img {
   right: 24px;
   background-color: #e7e9fc;
   padding: 8px;
-  /* width: 24px;
-  height: 24px; */
   border-radius: 50%;
   line-height: 0;
   border: none;
@@ -614,7 +681,7 @@ img {
   outline-offset: 4px;
   outline-color: transparent;
 }
-/* CHECKBOX */
+/* CHECKBOX TEXT */
 .checkbox-label-leave-contacts {
   color: #8e8f99;
   font-size: 12px;
@@ -633,11 +700,36 @@ img {
 .checkbox-wrrapper-leave-contacts {
   margin-bottom: 24px;
 }
+/* CHECKBOX STYLE */
+.checkbox-icon {
+  width: 16px;
+  height: 16px;
+}
+.checkbox-span {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  fill: transparent;
+  margin-right: 8px;
+
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox-leave-contacts:checked
+  + .checkbox-label-leave-contacts
+  .checkbox-span {
+  background-color: #404bbf;
+  fill: #f4f4fd;
+}
+
 /* SEND BUTTON */
 .send-btn-leave-contacts {
   cursor: pointer;
   background-color: #4d5ae5;
-  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
