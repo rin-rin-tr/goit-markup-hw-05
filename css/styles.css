@@ -452,11 +452,6 @@ img {
   color: #ffffff;
   margin-bottom: 16px;
 }
-/* here */
-/* .btn-footer {
-  position: relative;
-  width: 165px;
-} */
 
 .subscribe-btn-footer {
   font-family: "Roboto", sans-serif;
@@ -476,17 +471,7 @@ img {
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .icon-footer-send {
-  position: absolute;
-  top: 8px;
-  right: 24px;
-}
-.icon-footer-send {
-  width: 24px;
-  height: 24px;
-  fill: #ffffff;
-} */
-/* correct */
+
 .icon-footer-send {
   margin-left: 16px;
   fill: #ffffff;
@@ -561,7 +546,6 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* NEW HW-5 */
 /* BACKDROP */
 .backdrop {
   position: fixed;
@@ -585,7 +569,7 @@ img {
 /* MODAL WINDOW */
 .modal {
   width: 408px;
-  min-height: 584px; /*change later*/
+  min-height: 584px;
   background-color: #fcfcfc;
   border-radius: 4px;
   position: absolute;
