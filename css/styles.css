@@ -432,7 +432,6 @@ img {
 }
 
 .social-footer-title {
-  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -453,12 +452,14 @@ img {
   color: #ffffff;
   margin-bottom: 16px;
 }
-.btn-footer {
+/* here */
+/* .btn-footer {
   position: relative;
   width: 165px;
-}
+} */
 
 .subscribe-btn-footer {
+  font-family: "Roboto", sans-serif;
   cursor: pointer;
   background-color: #4d5ae5;
   font-size: 16px;
@@ -466,14 +467,16 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 165px;
   height: 40px;
   border: none;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-footer-send {
+/* .icon-footer-send {
   position: absolute;
   top: 8px;
   right: 24px;
@@ -481,6 +484,11 @@ img {
 .icon-footer-send {
   width: 24px;
   height: 24px;
+  fill: #ffffff;
+} */
+/* correct */
+.icon-footer-send {
+  margin-left: 16px;
   fill: #ffffff;
 }
 /* EMAIL INPUT */
@@ -491,21 +499,26 @@ img {
   border: 1px solid #ffffff;
   padding-left: 16px;
   background-color: transparent;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 .email-footer-input::placeholder {
   color: #fff;
   font-size: 12px;
   font-weight: 400;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.04em;
 }
-.email-btn-footer-div {
+
+.email-btn-footer-form {
   display: flex;
   align-items: baseline;
   gap: 24px;
 }
 
-/* ------------------------------------------------------------------------------------ */
 /* ICON FOOTER */
 .div-icons {
   display: inline-block;
